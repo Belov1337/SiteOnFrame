@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Боковое меню</title>
+	<style>
+		.side-h {
+			list-style: none;
+			padding: 0;
+			margin: 0;
+		}
+		.side-h li{
+			position: relative;
+		}
+		.side-h li #child1:target{
+			opacity: 1;
+		}
+				}
+		.side-h li #child2:target{
+			opacity: 1;
+		}
+				}
+		.side-h li #child3:target{
+			opacity: 1;
+		}
+				}
+		.side-h li #child4:target{
+			opacity: 1;
+		}
+				}
+		.side-h li #child5:target{
+			opacity: 1;
+		}
+			.side-h .child {
+			list-style: none;
+			opacity: 0;
+			position: absolute;
+		}
+	</style>
+	<style>
+#dvaRed:target {
+  color: red;
+}
+#dvaBlue:target {
+  color: blue;
+}
+#dvaGreen:target {
+  color: green;
+}
+</style>
+<style>
+.tri:target {
+  color: red;
+}
+</style>
+<style>
+[id^="sem"] {
+  position: fixed;
+}
+[id^="sem1"]:target ~ .sem:nth-of-type(1),
+[id^="sem2"]:target ~ .sem:nth-of-type(2) {
+  background: green;
+}
+#sem11:target ~ .sem:nth-of-type(1) b:nth-of-type(1),
+#sem12:target ~ .sem:nth-of-type(1) b:nth-of-type(2),
+#sem13:target ~ .sem:nth-of-type(1) b:nth-of-type(3),
+#sem21:target ~ .sem:nth-of-type(2) b:nth-of-type(1),
+#sem22:target ~ .sem:nth-of-type(2) b:nth-of-type(2),
+#sem23:target ~ .sem:nth-of-type(2) b:nth-of-type(3) {
+  color: yellow;
+}
+</style>
+
+<br id="sem11"><br id="sem12"><br id="sem13"><br id="sem21"><br id="sem22"><br id="sem23">
+<div class="sem"><b>Первый</b> <b>Второй</b> <b>Третий</b></div>
+<div class="sem"><b>Чётвёртый</b> <b>Пятый</b> <b>Шестой</b></div>
+<a href="#sem11">Первый</a>
+<a href="#sem12">Второй</a>
+<a href="#sem13">Третий</a>
+<a href="#sem21">Чётвёртый</a>
+<a href="#sem22">Пятый</a>
+<a href="#sem23">Шестой</a>
+<style>
+#pyat:target,
+#pyat:target ~ .pyat {  /* если имеют только общих родителей */ 
+  color: red;
+}
+</style>
+<style>
+#raz {
+  border: solid yellow;
+}
+#raz:target {
+  border-color: green;
+}
+</style>
+<div id="raz">Образец</div>
+<style>
+#shest {
+  position: fixed;
+}
+#shest:target ~ .shest {
+  color: red;
+}
+</style>
+<br id="shest">
+<div class="shest">Пятый образец</div>
+<a href="#shest">Изменить цвет без прокрутки к DIV</a>
+<div id="pyat" class="pyat">Четвёртый образец</div>
+<div class="pyat">Четвёртый образец</div>
+<div class="pyat">Четвёртый образец</div>
+<a href="#pyat">Все три DIV</a>
+<div id="tri1" class="tri">Третий образец</div>
+<div id="tri2" class="tri">Третий образец</div>
+<div id="tri3" class="tri">Третий образец</div>
+<a href="#tri1">Первый DIV</a> | <a href="#tri2">Второй DIV</a> | <a href="#tri3">Третий DIV</a>
+<div id="dvaRed">
+  <div id="dvaBlue">
+    <div id="dvaGreen">
+      Второй образец
+    </div>
+  </div>
+</div>
+<a href="#dvaRed">Красный</a> | <a href="#dvaBlue">Синий</a> | <a href="#dvaGreen">Зелёный</a>	
+</head>
+<body>
+	<nav>
+	<ul class="side-h">
+	<li>
+		<a href="child">Пункт</a>
+		<ul class="child" id="child1">
+			<li><a href="#">Пункт</a></li>
+			<li><a href="#">Пункт</a></li>
+			<li><a href="#">Пункт</a></li>
+		</ul>
+	</li>
+	<li>
+		<a href="child2">Пункт</a>
+		<ul class="child" id="child2">
+			<li><a href="#">Пункт</a></li>
+			<li><a href="#">Пункт</a></li>
+			<li><a href="#">Пункт</a></li>
+		</ul>
+	</li>
+	<li>
+		<a href="child3">Пункт</a>
+		<ul class="child" id="child3">
+			<li><a href="#">Пункт</a></li>
+			<li><a href="#">Пункт</a></li>
+			<li><a href="#">Пункт</a></li>
+		</ul>
+	</li>
+	<li>
+		<a href="child4">Пункт</a>
+		<ul class="child" id="child4">
+			<li><a href="#">Пункты</a></li>
+			<li><a href="#">Пункты</a></li>
+			<li><a href="#">Пункты</a></li>
+			<li><a href="#">Пункты</a></li>
+			<li><a href="#">Пункты</a></li>
+			<li><a href="#">Пункты</a></li>
+			<li><a href="#">Пункты</a></li>
+			<li><a href="#">Пункты</a></li>
+		</ul>
+	</li>
+	<li>
+		<a href="child5">Пункт</a>
+		<ul class="child" id="child5">
+			<li><a href="#">Пункт</a></li>
+			<li><a href="#">Пункт</a></li>
+			<li><a href="#">Пункт</a></li>
+		</ul>
+	</li>
+	</ul>
+</nav>
+</body>
+</html>

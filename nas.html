@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+<link rel="stylesheet" type="text/css" href="css/css/normalize.css">
+<link rel="stylesheet" type="text/css" href="css/css/style.css">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@500&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="style.css">
+	
+</head>
+<body>
+
+	<div class="main-content">
+
+	<aside class="sidbar">
+	   <ul class="bro2">
+
+
+<style>
+body{
+	background: url('img/fon.jpg');
+	background-repeat: 100%;
+	align-content: center;
+}
+</style> 
+
+</head>
+
+		<div class="content">
+			<div class="bro">Как правило, для создания программ на C# разработчики используют Visual Studio или какие-то другие IDE типа Rider от компании JetBrains. Но все подобные IDE, хотя и облегчают разработку, в то же время скрывают множество мельчайших подробностей по созданию программ. И в реальности мы даже можем обойтись без той же Visual Studio, используя только инфраструктуру .NET Core CLI. Рассмотрим, как использовать .NET Core CLI и компилировать приложение из командной строки.
+
+Поэтому создадим на диске C какую-нибудь новую папку для проекта. Назовем ее, к примеру, helloapp. Откроем командную строку и с помощью команды cd перейдем к этой папке.
+
+Для создания проекта в .NET Core CLI применяется команда dotnet new, которой передается название проекта. Итак, в введем в командной строке следующую команду:
+<div><img class="img_glavn" src="img\27img.png"></div>
+После выполнения этой команды в папке helloapp будет создан проект с минимальным набором стандартных файлов и папок.
+<div><img class="img_glavn" src="img\28img.png"></div>
+В частности, мы можем найти в папке проекта файл helloapp.csproj. Это главный файл проекта, который определяет его конфигурацию. Мы можем открыть его в любом текстовом редакторе, просмотретьи при необходимости изменить. По умолчанию он имеет следующее определение:
+<div><img class="img_glavn" src="img\29img.png"></div>
+Фактически это xml-файл, который содержит ряд элементов. Так, в данном случае элемент OutputType имеет значение "Exe", то есть при компиляции будет создаваться exe-файл, который мы сможем запускать. А элемент TargetFramework указывает, под какую версию фреймворка будет компилироваться проект. В данном случае это .net 5.0.
+
+И, кроме того, по умолчанию создается главный файл программы Program.cs со следующим содержимым:
+<div><img class="img_glavn" src="img\30img.png"></div>
+Соответственно, если нам надо внести изменения в исходный код программы, то мы будем изменять содержимое именно этого файла.
+
+В принципе этот минимальный проект уже можно запускать. Для запуска проекта введем в командной строке следующую команду:
+<div><img class="img_glavn" src="img\31img.png"></div>
+После выполнения команды в проекте в папке bin\MCD\Debug\net5.0 появится файл программы helloapp.exe, который можно вручную запустить. (Если используются .NET Core 2.x или 1.х, то там буде компилировать файл с расширением dll.)
+	</div>
+</section>
+
+
+<footer> Site make by ©Vadim</footer>
+	</div>
+	
+</body>
+</html>

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<title>всплывающее меню</title>
+	<style>
+		* {
+			padding: 0;
+			margin: 0;
+		}
+
+	.menu-h {
+		list-style: none;
+		padding: 0;
+		margin: 0;
+		display: flex;
+	}
+	.menu-h li {
+		position: relative;
+	}
+	.menu-h .child{
+		list-style: none;
+		padding: 0;
+		margin: 0;
+		/*display: none;*/
+		position: absolute;
+		bottom: 40px;
+		opacity: 0;
+		transition: all .8s;
+		background: #ccc;
+		text-decoration: none;
+	}
+
+	.menu-h li:hover > .child{
+		/*display: block;*/
+		opacity: 1;
+		top: 40px;
+		text-decoration: none;
+	}
+
+	.menu-h li a, .menu-h li span{
+		padding: 10px;
+		border: 1px solid #0030ff;
+		display: block;
+		background: #0030ff;
+		cursor: pointer;
+		text-decoration: none;
+		color: #7CFF00;
+		height: 20px;
+		background: repeating-linear-gradient(45deg, #010208, #0A35F7 10px, #050598 10px, #005667 40px);
+	}
+	</style>
+</head>
+<body>
+	<nav>
+	<ul class="menu-h">
+	<li>
+		<span>Пункт</span>
+		<ul class="child">
+			<li><a href="#">Пункт</a></li>
+			<li><a href="#">Пункт</a></li>
+			<li><a href="#">Пункт</a></li>
+		</ul>
+	</li>
+	<li>
+		<span>Пункт</span>
+		<ul class="child">
+			<li><a href="#">Пункт</a></li>
+			<li><a href="#">Пункт</a></li>
+			<li><a href="#">Пункт</a></li>
+		</ul>
+	</li>
+	<li>
+		<span>Пункт</span>
+		<ul class="child">
+			<li><a href="#">Пункт</a></li>
+			<li><a href="#">Пункт</a></li>
+			<li><a href="#">Пункт</a></li>
+		</ul>
+	</li>
+	<li>
+		<span>Пункт</span>
+		<ul class="child">
+			<li><a href="#">Пункты</a></li>
+			<li><a href="#">Пункты</a></li>
+			<li><a href="#">Пункты</a></li>
+			<li><a href="#">Пункты</a></li>
+			<li><a href="#">Пункты</a></li>
+			<li><a href="#">Пункты</a></li>
+			<li><a href="#">Пункты</a></li>
+			<li><a href="#">Пункты</a></li>
+		</ul>
+	</li>
+	<li>
+		<span>Пункт</span>
+		<ul class="child">
+			<li><a href="#">Пункт</a></li>
+			<li><a href="#">Пункт</a></li>
+			<li><a href="#">Пункт</a></li>
+		</ul>
+	</li>
+	</ul>
+</nav>
+Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corporis nobis, alias odit fugit eos doloribus reprehenderit fugiat tempora veniam vel voluptatibus assumenda aliquam error, itaque dolore. Accusantium sequi fuga, minus praesentium obcaecati sapiente cum ipsum eveniet facere, ullam, ut rerum deserunt, assumenda cupiditate molestiae reiciendis tempora natus. Asperiores architecto nemo consequuntur vero necessitatibus alias deserunt doloremque aliquam sed maiores fugiat molestias sit reiciendis perspiciatis, nesciunt? Possimus mollitia reiciendis quidem laudantium sequi dignissimos esse, similique nihil pariatur dolorum ullam obcaecati deleniti iusto alias, cumque at reprehenderit voluptatibus odit ex accusantium quo recusandae animi repellat repudiandae expedita. Minus consectetur corrupti, asperiores alias. Mollitia soluta ullam non quaerat ab porro animi sapiente. Cumque quidem, voluptatum soluta? Quibusdam nesciunt repudiandae cumque, provident voluptatibus! Officiis sapiente facere cupiditate consequuntur, unde. Repellat iure maxime quibusdam rem earum eum. Distinctio sit tempora doloribus, error assumenda consequuntur, hic ipsam eos explicabo sunt officiis cupiditate quisquam quibusdam, nisi recusandae voluptas illum modi reiciendis nihil ad. Quod accusantium nisi animi maiores sit quis aliquam, laboriosam ratione soluta dicta, quasi velit deserunt, dolores doloribus molestiae fuga distinctio placeat magnam esse! Provident laboriosam velit quos sed at, inventore iusto autem corrupti reiciendis cumque nobis minus officiis eius ipsum natus optio, excepturi, facilis.
+Lorem ipsum dolor sit, amet consectetur adipisicing elit. Possimus hic ullam provident est aliquid officiis exercitationem soluta, amet. Voluptatem sint, eveniet iste iusto, pariatur autem? Non fugiat dolorem iusto porro unde labore eius, nihil ullam nostrum assumenda consequuntur ipsum tempora aperiam est neque quas facilis temporibus explicabo delectus impedit aliquam. Repellat, quas fugiat. Provident consequatur fugit, odit dolor quisquam ipsa sapiente. Laudantium, laborum recusandae veritatis fuga. Dolorum animi, doloremque. Dolorum aliquam, quod ab a, et tempore enim temporibus soluta, nisi hic rem porro magnam unde perspiciatis esse delectus ratione commodi officia, eius repellendus. Deserunt laudantium cupiditate expedita, nulla, facere in ullam repellendus dicta pariatur a velit. Iusto ipsum nam deleniti. Nobis eligendi aperiam, expedita saepe architecto molestiae magni maiores illo fuga voluptatibus perferendis accusantium ad laborum sint amet laudantium nam dolorem voluptas cupiditate. Et fugit, quae magni minima ullam eveniet. Eveniet illum maxime, commodi dolores similique molestiae. Rem esse tenetur recusandae inventore, earum molestias omnis quod ullam veniam pariatur natus veritatis officiis ad, id. Eum, ex, ad minima quod fugiat consectetur totam repellendus ipsam ducimus accusantium quo, qui temporibus iure similique id, magnam quae repellat! Accusantium mollitia, illum iusto hic dicta eaque dolores exercitationem. Molestiae repellat eius dolorum mollitia exercitationem, quibusdam magni, nam dignissimos? Consectetur numquam, aperiam tempore a maiores molestiae iste repellendus. Deleniti itaque quis vero deserunt voluptatem, quisquam labore molestias molestiae asperiores nobis blanditiis nisi ipsum neque nam animi enim facilis magni sit provident ducimus id ex dignissimos? Sed voluptate ipsam vitae, aspernatur assumenda libero fugit unde minima hic perspiciatis odio impedit sequi rerum autem adipisci natus iusto consequuntur asperiores ea praesentium expedita voluptates! Enim, fugiat veniam praesentium velit. Vitae magnam, iure, sapiente pariatur, unde neque nobis, eum saepe voluptas nisi quo perspiciatis recusandae? Quos, iure explicabo accusamus est error non commodi, rerum, quaerat fuga a, expedita ex?
+</body>
+</html>

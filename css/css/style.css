@@ -1,0 +1,159 @@
+header{	
+	width: 100%;
+	/*background:#ffffff9e;*/
+	background: #fff;
+	/**opacity:0.5;**\
+	/**min-height: 70px;**/
+	font-size: 17px; 
+	box-sizing: border-box;
+	font-family: 'Comfortaa', cursive;
+}
+
+header .logo img{
+	width: 95px;
+}
+header .flexbox {
+	display: flex;
+}
+
+header .title {
+	margin: 5px;
+}
+header .social {
+	flex-grow: 1;
+	display: flex;
+	justify-content: flex-end;
+}
+header .social a {
+	width: 45px;
+}
+header .social img {
+	width: 40px;
+}
+header .main-menu ul{
+	display: flex;
+	list-style: none;
+	justify-content: center;
+	margin: 0;
+	padding: 0;
+	color: #000000;
+}
+
+header .main-menu ul li a{
+	padding: 10px 15px;
+	display: block;
+	text-decoration: none;
+	color: #000000;
+}
+
+.main-content{
+	display: flex;
+}
+
+.main-content aside{
+	min-width: 30%;
+	background: #fff;
+	font-family: 'Comfortaa', cursive;
+	padding-right: 30px;
+	flex-grow: 1;
+}
+
+.main-content .content{
+	background: #d8d8d8;
+	min-height: 40vh;
+	color: #333;
+	font-family: 'Comfortaa', cursive;
+}
+
+.main-content aside ul{
+	list-style: none;
+}
+.main-content .content .bro {
+	color: #000000;
+	border: inline-block;
+	padding: 10px;
+
+}
+.main-content aside ul li {
+ margin-bottom: 15px;
+ border-bottom: 1px solid #333;
+}
+.main-content aside ul li a{
+	text-decoration: none;
+	color: #000000;
+	line-height: 1.5em;
+
+}
+/*left-text*/
+.main-content .sidbar .bro3 {
+	padding: 8px;
+	border-radius: 10px;
+	transition: all .5s;
+	background: #fff;
+	color: #000000;
+}
+.main-content .sidbar .bro3:hover {
+	border-radius: 30px;
+	background: #d8d8d8	;
+	color: #000000;
+}
+
+footer {
+	width: 100%;
+	min-height: 20px;
+	display: flex;
+	justify-content: center;
+	background: #fff;
+	box-sizing: border-box;
+	font-family: 'Comfortaa', cursive;
+}
+
+
+.img_glav {
+  width: 50%;
+  display: inline-block;
+  float: right;
+  margin-right: 20px;
+  
+}
+.img_istoria {
+  width: 50%;
+  display: inline-block;
+  float: left;
+  margin-right: 20px;
+}
+.img_razvitie {
+	width: 50%;
+ 	display: inline-block;
+	float: right;
+	margin-right: 20px;
+}
+.img_ustr {
+	width: 50%;
+ 	display: inline-block;
+	float: left;
+	margin-right: 20px;
+}
+
+
+
+
+@media (max-width: 600px) {
+  .main-content {
+  	display: block;
+  }
+  .header .main-menu ul {
+  	display: block;
+  }
+  .header .main-menu ul li a {
+  	border-bottom: 1px solid #ccc;
+  }
+}
+
+@media (min-width: 1200px) {
+  .main-content aside{
+  	min-width: 20%;
+  }
+
+
+}
